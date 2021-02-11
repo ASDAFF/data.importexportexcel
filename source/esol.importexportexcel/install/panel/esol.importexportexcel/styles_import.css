@@ -1,0 +1,206 @@
+.kda-ie-tbl {border-collapse: collapse;}
+.kda-ie-tbl,
+.kda-ie-tbl table {width: 100%;}
+.kda-ie-tbl select {max-width: 200px;}
+.kda-ie-tbl table.additional {width: auto;}
+.kda-ie-tbl .copysettings {float: right;}
+.kda-ie-tbl .copysettings a{color: #2675d7; text-decoration: none; border-bottom: 1px dashed #2675d7;}
+.kda-ie-tbl .addsettings_link {color: #2675d7; text-decoration: none;}
+.kda-ie-tbl .addsettings_link:focus {outline: none;}
+.kda-ie-tbl .addsettings_link span {border-bottom: 1px dashed #2675d7;}
+.kda-ie-tbl .addsettings_link:after {display: inline-block; content: ""; width: 8px; height: 6px; background: url(images_import/sprite.png) no-repeat -187px 0px; vertical-align: middle; margin: 0px 0px 0px 5px;}
+.kda-ie-tbl .addsettings_link.open:after {background-position: -187px -9px;}
+.kda-ie-tbl .addsettings_inner {max-width: 650px; background: #cbd6da; border-radius: 5px; padding: 10px; margin: 10px 0px; display: none;}
+.kda-ie-tbl table.list td {min-width: 150px; padding: 0px;}
+.kda-ie-tbl table.list tr:first-child td {vertical-align: middle; padding: 5px 3px; min-width: 154px;}
+.kda-ie-tbl table.list tr:first-child td.kda-ie-moved-to { /*padding-left: 25px;*/ outline: 3px dashed #ff6600;}
+.kda-ie-tbl table.list tr:first-child td.kda-ie-moved-to .kda-ie-field-select-btns {display: none;}
+.kda-ie-tbl table.additional td {padding-left: 0px; min-width: auto;}
+.kda-ie-tbl table.list td:first-child,
+.kda-ie-tbl table.list tr:first-child td:first-child {min-width: 1px; padding: 5px 5px;}
+.kda-ie-tbl table.list td:first-child select {display: none;}
+.kda-ie-tbl table.list tr:nth-child(odd) td {background-color: #ffffff;}
+.kda-ie-tbl table.list > tr:first-child > td,
+.kda-ie-tbl table.list > tbody > tr:first-child > td { border-top: 1px solid #aaaaaa; background-color: #e0e8ea; white-space: nowrap; transition: background 1.5s ease;}
+.kda-ie-tbl table.list > tr:first-child > td.kda-ie-field-select-highligth,
+.kda-ie-tbl table.list > tbody > tr:first-child > td.kda-ie-field-select-highligth {background-color: #fc0;}
+.kda-ie-tbl table.list td.line-settings{white-space: nowrap;}
+.kda-ie-tbl table.list tr:last-child td {border-bottom: 1px solid #aaaaaa;}
+.kda-ie-tbl table.list tr td:first-child {border-left: 1px solid #aaaaaa;}
+.kda-ie-tbl table.list tr td:last-child {border-right: 1px solid #aaaaaa;}
+.kda-ie-tbl table.list td.section_name_cell {outline: 2px solid #fc0;}
+.kda-ie-tbl table.list .cell {max-width: 250px; max-height: 50px; overflow: hidden;}
+.kda-ie-tbl table.list .cell_inner {padding: 5px 5px; /*word-break: break-all;*/}
+.kda-ie-tbl table.list td:hover .cell {overflow: visible; position: relative;}
+.kda-ie-tbl table.list td:hover .cell_inner {background-color: #f5f9f9;}
+.kda-ie-tbl table.list tr:nth-child(odd) td:hover .cell_inner {background-color: #ffffff;}
+.kda-ie-tbl table.list select {width: -moz-calc(100% - 17px); width: -webkit-calc(100% - 17px); width: -o-calc(100% - 17px); width: calc(100% - 17px);}
+.kda-ie-tbl table.list input.fieldval{ padding: 0px 20px 0px 5px; width: -moz-calc(100% - 42px); width: -webkit-calc(100% - 42px); width: -o-calc(100% - 42px); width: calc(100% - 42px); border: 1px solid #959ea9; background-color: #fff; /*background: -webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#fff),color-stop(50%,#f6f6f6),color-stop(52%,#eee),color-stop(100%,#f4f4f4)); background: -webkit-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%); background: -moz-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%); background: -o-linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%); background: linear-gradient(top,#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%); background-clip: padding-box;*/ cursor: pointer; background: #fff url(images_import/select_down.png) 100% -2px no-repeat;}
+.kda-ie-tbl .kda-ie-field-select .chosen-container-single,
+#kda_select_chosen .chosen-container-single {/*width: -moz-calc(100% - 15px); width: -webkit-calc(100% - 15px); width: -o-calc(100% - 15px); width: calc(100% - 15px);*/ width: 100% !important;}
+.kda-ie-tbl .kda-ie-field-select .chosen-container-single .chosen-single,
+#kda_select_chosen .chosen-container-single .chosen-single {height: 26px; line-height: 25px; border: 1px solid #959ea9; padding-left: 5px;}
+.kda-ie-tbl .heading td.left {text-align: left !important; padding-left: 12px !important;}
+.kda-ie-tbl .heading td.left a.list-settings-link {display: inline-block; vertical-align: middle; width: 14px; height: 14px; background: url(images_import/sprite.png) no-repeat 0px 0px; margin: 0px 0px 0px 7px; position: relative; top: -1px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5; opacity:0.5;}
+.kda-ie-tbl .heading td.right {text-align: right !important; width: 1%; white-space: nowrap;}
+.kda-ie-tbl.empty .heading td.right * {visibility: hidden;}
+.kda-ie-tbl .heading .list-settings a {display: none;}
+.kda-ie-tbl .heading .showlist,
+.kda-ie-tbl .heading .list-settings a.showlist {display: inline-block; vertical-align: middle; width: 16px; height: 8px; background: url(images_import/sprite.png) no-repeat -17px 0px; margin: 0px 20px 0px 45px;}
+.kda-ie-tbl .heading .showlist.open,
+.kda-ie-tbl .heading .list-settings a.showlist.open {background: url(images_import/sprite.png) no-repeat -17px -11px;}
+.kda-ie-tbl tr.settings {display: none;}
+.adm-workarea .kda-ie-tbl .heading td {border-bottom: 1px solid #ffffff;}
+.kda-ie-tbl div.set,
+.kda-ie-tbl div.set_scroll {overflow: auto; width: 100%; position: relative;}
+.kda-ie-tbl div.set_scroll div {height: 1px;}
+.kda-ie-tbl div.set_scroll.fixed {position: fixed; top: 45px; z-index: 50;}
+.kda-ie-tbl a.field_settings {display: inline-block; vertical-align: top; right: -2px; top: 0px; position: absolute; width: 14px; height: 14px; background: url(images_import/sprite.png) no-repeat 0px 0px;}
+.kda-ie-tbl .kda-ie-field-select b:first-child {display: block; text-align: center; line-height: 0.8em; margin: 0px 0px 4px 0px;}
+.kda-ie-tbl .kda-ie-field-select div:first-of-type a.field_settings {top: 7px;}
+.kda-ie-tbl a.field_settings.inactive {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5; opacity:0.5;/*cursor: default;*/}
+.kda-ie-tbl .kda-ie-field-select div {position: relative;}
+.kda-ie-tbl .kda-ie-field-select div.chosen-drop,
+#kda_select_chosen div.chosen-drop {position: absolute; min-width: 300px; width: 100%;}
+.kda-ie-tbl .kda-ie-field-select .chosen-container .chosen-results,
+#kda_select_chosen .chosen-container .chosen-results {max-height: 350px;}
+.kda-ie-tbl .kda-ie-field-select .chosen-container .chosen-results li,
+#kda_select_chosen .chosen-container .chosen-results li {padding-right: 25px; padding-top: 3px; padding-bottom: 3px;}
+.kda-ie-tbl .kda-ie-field-select a.field_delete {display: block; width: 10px; height: 10px; background: url(images_import/sprite.png) no-repeat -84px 0px; right: 0px; bottom: 1px; position: absolute; opacity: 0.5;}
+.kda-ie-tbl .kda-ie-field-select div:first-of-type a.field_delete {display: none;}
+.kda-ie-tbl a.field_insert {display: block; vertical-align: top; right: 1px; top: 1px; position: absolute; width: 10px; height: 10px; background: url(images_import/sprite.png) no-repeat -99px -2px;}
+.kda-ie-tbl a.field_insert + a.field_settings,
+.kda-ie-tbl .kda-ie-field-select div:first-of-type a.field_insert + a.field_settings {top: 13px;}
+.kda-ie-tbl .list span.sandwich {background: url(images_import/sprite.png) no-repeat -53px 0px; width: 12px; height: 11px; display: inline-block; margin: 0px 0px 0px 5px; vertical-align: middle; cursor: pointer;}
+.kda-ie-tbl .list span.checkall {display: inline-block; vertical-align: middle; line-height: 1.1em; max-width: 20px;}
+.kda-ie-tbl .list input[type="checkbox"] {vertical-align: middle;}
+.kda-ie-tbl .list span.slevel {vertical-align: middle; font-size: 16px; font-weight: bold; margin: 0px 0px 0px 5px;}
+.kda-ie-edit-btns {letter-spacing: -5px; position: relative; top: -3px;}
+#redirect_message {display: none; margin: 10px 0px 0px 0px; font-weight: bold;}
+.bx-core-adm-dialog td.kda-ie-settings-margin-container,
+.bx-core-adm-dialog td.kda-ie-settings-margin-container > div {text-align: center;}
+.bx-core-adm-dialog div.kda-ie-settings-margin {margin: 0px 0px 10px 0px; text-align: center; position: relative;}
+.kda-ie-settings-margin input[type="text"] {width: 70px;}
+.kda-ie-settings-margin a.delete,
+.kda-ie-settings-margin a.delete:hover,
+.kda-ie-settings-conversion a.delete,
+.kda-ie-settings-conversion a.delete:hover {display: inline-block; width: 14px; height: 14px; vertical-align: middle; margin: 0px 0px 0px 20px; background: url(images_import/sprite.png) -36px 0px no-repeat;}
+.kda-ie-settings-conversion a.delete,
+.kda-ie-settings-conversion a.delete:hover {margin-left: 5px;}
+.kda-ie-settings-conversion a.up,
+.kda-ie-settings-conversion a.up:hover {display: inline-block; border-bottom: 10px solid #565656; border-left: 6px solid transparent; border-right: 6px solid transparent; margin-left: 10px; vertical-align: middle;}
+.kda-ie-settings-conversion a.down,
+.kda-ie-settings-conversion a.down:hover {display: inline-block; border-top: 10px solid #565656; border-left: 6px solid transparent; border-right: 6px solid transparent; margin-left: 3px; vertical-align: middle;}
+.kda-ie-settings-conversion:first-of-type a.up,
+.kda-ie-settings-conversion:first-of-type a.up:hover,
+.kda-ie-settings-conversion:last-of-type a.down,
+.kda-ie-settings-conversion:last-of-type a.down:hover {visibility: hidden;}
+.kda-ie-file-preloader {text-align: center; padding: 50px 0px 70px 0px; background: url(images_import/preloader.gif) center 80px no-repeat;}
+#bx-admin-prefix .kda-ie-file-choose .adm-input-file-ex-wrap {margin: 12px 0px 0px 0px;}
+#bx-admin-prefix .kda-ie-file-choose .adm-input-file-name {max-width: 500px; overflow: hidden;}
+.kda-ie-result #progressbar {/*max-width: 600px;*/ height: 25px; border-radius: 7px; background: #999999; position: relative; box-shadow: 0px 0px 3px #999999; margin: 0px 0px 60px 0px;}
+.kda-ie-result #progressbar span.pline {position: absolute; display: block; left: 0px; top: 0px; height: 100%; width: 0%; border-radius: 7px; background: #3e86d2; box-shadow: 0px 0px 3px #3e86d2;}
+.kda-ie-result #progressbar span.presult {position: absolute; display: block; left: 0px; bottom: -60px; width: 100%;font-size: 20px; text-align: center;}
+.kda-ie-result #progressbar span.presult.load {padding-top: 43px; background: url(images_import/preloader.gif) center top no-repeat;}
+.kda-ie-result #progressbar span.presult span {font-size: 14px; display: block; padding: 5px 0px 0px 0px;}
+.kda-ie-result .detail_status {float: right;}
+.kda-ie-result td {vertical-align: top;}
+.kda-ie-settings-header-links {position: relative;}
+.kda-ie-settings-header-links-inner {position: absolute; right: 0px; font-size: 12px; padding-right: 10px;}
+.kda-ie-settings-margin-templates {position: absolute; right: -3px; top: 25px; background: #ffffff; padding: 10px; text-align: center; border: 1px solid #dce7ed; display: none; z-index: 3;}
+.kda-ie-settings-margin-templates-inner {position: relative;}
+.kda-ie-settings-margin-templates input,
+.kda-ie-settings-margin-templates select {text-align: left;}
+.kda-ie-settings-margin-templates .kda-ie-settings-margin-templates-inner input[type=text],
+.kda-ie-settings-margin-templates .kda-ie-settings-margin-templates-inner select {width: 220px; margin: 5px 0px;}
+.kda-ie-settings-margin-templates .kda-ie-settings-margin-templates-inner input[type=text] {width: 208px;}
+.kda-ie-settings-margin-templates a.delete,
+.kda-ie-settings-margin-templates a.delete:hover {display: block; float: right; width: 14px; height: 14px; vertical-align: middle; margin: 7px 0px 0px 0px; background: url(images_import/sprite.png) -36px 0px no-repeat;}
+.kda-ie-tbl .kda-ie-field-select .kda-ie-field-select-btns {display: block; position: relative;}
+.kda-ie-tbl .kda-ie-field-select div.kda-ie-field-select-btns-inner {position: absolute; top: 3px; left: -5px; right: -5px; opacity: 0; background: #e0e8ea; border-bottom: 2px solid #ffffff; padding: 0px 0px 2px 0px; transition: all 0.3s ease;}
+.kda-ie-tbl .kda-ie-field-select .kda-ie-add-load-field {display: block; width: 13px; height: 13px; margin: 0px auto; background: url(images_import/sprite.png) -68px 0px no-repeat;}
+.kda-ie-tbl .kda-ie-field-select .kda-ie-move-fields {display: block; width: 20px; height: 10px; position: absolute; top: 0px; left: 5px; text-decoration: none;}
+.kda-ie-tbl .kda-ie-field-select .kda-ie-move-fields span {display: inline-block; border-right: 9px solid #69747a; border-top: 4px solid transparent; border-bottom: 4px solid transparent;}
+.kda-ie-tbl .kda-ie-field-select .kda-ie-move-fields span:last-of-type {border-right: 0px; border-left: 10px solid #69747a; margin-left: 4px;}
+.kda-ie-tbl .kda-ie-field-select:hover .kda-ie-field-select-btns-inner {opacity: 1;}
+.kda-ie-settings-conversion {margin: 0px 0px 3px 0px;}
+.kda-ie-settings-conversion select {max-width: 135px;}
+.kda-ie-settings-conversion select.field_when {max-width: 90px;}
+.kda-ie-settings-conversion select.field_cell {max-width: 155px;}
+.kda-ie-settings-conversion input {max-width: 150px;}
+.kda-ie-settings-phpexpression textarea {display: block; margin: 5px auto 0px auto; min-width: 600px; min-height: 80px;}
+.kda-ie-edit-btns .adm-table-btn-edit,
+.kda-ie-edit-btns .adm-table-btn-copy,
+.kda-ie-edit-btns .adm-table-btn-delete {background:url("images_import/bx-admin-sprite-big1.png") no-repeat 0px 0px; background-size: auto; cursor:pointer; height:32px; width:32px; display:inline-block; vertical-align:top;}
+.kda-ie-edit-btns .adm-table-btn-edit:hover {background-position:0 -111px;}
+.kda-ie-edit-btns .adm-table-btn-edit:active {background-position:0 -229px;}
+.kda-ie-edit-btns .adm-table-btn-copy {background-position:0 -37px;}
+.kda-ie-edit-btns .adm-table-btn-copy:hover {background-position:0 -150px;}
+.kda-ie-edit-btns .adm-table-btn-copy:active {background-position:0 -269px;}
+.kda-ie-edit-btns .adm-table-btn-delete {background-position:0 -74px;}
+.kda-ie-edit-btns .adm-table-btn-delete:hover {background-position:0 -189px;}
+.kda-ie-edit-btns .adm-table-btn-delete:active {background-position:0 -309px;}
+.kda-head-more,
+.kda-head-more.show {font-weight: normal; font-size: 90%; display: inline !important;}
+.kda-chosen-multi {width: 300px;}
+.kda-chosen-multi + .chosen-container .chosen-drop {width: 100%;}
+.kda-ie-chosen-td,
+.bx-core-adm-dialog td.kda-ie-chosen-td {text-align: center;}
+.kda-ie-chosen-td .chosen-container-single .chosen-single span {line-height: 25px;}
+.kda-ie-chosen-td .chosen-container-single .chosen-single:hover {text-decoration: none;}
+.kda-ie-list-settings-defaults a.delete,
+.kda-ie-list-settings-defaults a.delete:hover {display: inline-block; width: 14px; height: 14px; vertical-align: middle; margin: 0px 0px 0px 20px; background: url(images_import/sprite.png) -36px 0px no-repeat;}
+.adm-detail-content-item-block select.chosen {max-width: 400px;}
+.kda-ie-list-settings .kda-ie-ls-range,
+.kda-ie-ls-range div.kda-ie-ls-range-item {text-align: center;}
+.kda-ie-ls-range div.kda-ie-ls-range-item {margin: 0px 0px 5px 0px;}
+.kda-ie-ls-range div.kda-ie-ls-range-item input[type=text] {width: 100px;}
+.kda-ie-ls-range div.kda-ie-ls-range-item a.delete,
+.kda-ie-ls-range div.kda-ie-ls-range-item a.delete:hover {display: inline-block; width: 14px; height: 14px; vertical-align: middle; margin: 0px 0px 0px 20px; background: url(images_import/sprite.png) -36px 0px no-repeat;}
+.kda-ie-prop-remove {max-height: 350px; overflow: auto;}
+.kda-ie-prop-remove-item {float: left; width: 49%; white-space: nowrap; overflow: hidden; margin: 0px 0px 3px 0px;}
+#kda-ie-move-column-abs {display: block; position: absolute; border: 2px dashed #69747a;}
+.adm-detail-content-table > tbody > .heading td.kda-ie-profile-header {padding-right: 0px !important; padding-left: 0px !important;}
+.kda-ie-profile-header > div {position: relative;}
+.kda-ie-profile-header .kda-ie-help-link {display: block; position: absolute; right: 12px; top: -3px; width: 24px; height: 24px; background: url(images_import/sprite.png) -114px 0px no-repeat;}
+.kda-ie-tabs .kda-ie-tabs-heads a,
+.bx-core-adm-dialog .kda-ie-tabs .kda-ie-tabs-heads a {display: inline-block; padding: 8px 15px; background: #e0e8ea; color: #1c53a2; font-weight: bold; border: 1px solid #e0e8ea; border-bottom: 0px; border-radius: 7px 7px 0px 0px; text-decoration: none;}
+.kda-ie-tabs .kda-ie-tabs-heads a.active {cursor: pointer; background: #ffffff; color: #000000;}
+.kda-ie-tabs .kda-ie-tabs-heads {border-bottom: 1px solid #e0e8ea;}
+.kda-ie-tabs .kda-ie-tabs-bodies {border: 1px solid #e0e8ea; border-top: 0px;}
+.kda-ie-tabs .kda-ie-tabs-bodies > div {display: none; background: #ffffff; height: 420px; overflow: auto;}
+.kda-ie-tabs .kda-ie-tabs-bodies > div.active {display: block;}
+.kda-ie-tabs ul.video li {margin: 0px 0px 7px 0px;}
+#kda-ie-help-faq > li > div {display: none; padding: 5px 10px 0px 0px;}
+#kda-ie-help-faq > li {margin: 0px 0px 7px 0px;}
+#kda-ie-help-faq > li > a {text-decoration: none; border-bottom: 1px dashed #2675d7;}
+#kda-ie-help-faq > li ul {margin-top: 5px;}
+#kda-ie-help-faq > li ul li {list-style-type: disc; padding: 0px 0px 5px 0px;}
+.kda-ie-video-list a {display: inline-block; width: 196px; height: 165px; overflow: hidden; margin: 0px 0px 15px 15px; vertical-align: top; color: #167ac6; position: relative;}
+.kda-ie-video-list a span {color: #167ac6; font-weight: bold;}
+.kda-ie-video-list a:before {content: ""; display: inline-block; width: 43px; height: 30px; background: url(images_import/sprite.png) -141px 0px no-repeat; position: absolute; left: 76px; top: 40px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70); -moz-opacity:0.7; -khtml-opacity:0.7; opacity:0.7;}
+.kda-ie-video-list a:hover:before {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100); -moz-opacity:1.0; -khtml-opacity:1.0; opacity:1.0;}
+.kda-ie-help-faq-prolog {margin-left: 25px;}
+.kda-ie-uninst .subtitle {font-size: 130%;}
+.kda-ie-uninst label {cursor: pointer;}
+.kda-ie-uninst textarea {width: 450px; height: 100px;}
+#bx-admin-prefix .bx-core-popup-menu-item-icon.adm-menu-upload-email {background: url(images_import/source_email.png) center center no-repeat;}
+#bx-admin-prefix .bx-core-popup-menu-item-icon.adm-menu-upload-linkauth {background: url(images_import/source_linkauth.png) center center no-repeat;}
+.kda-ie-email-checkparams,
+.bx-core-adm-dialog td.kda-ie-email-checkparams,
+.bx-core-adm-dialog td.kda-ie-email-checkparams div {text-align: center;}
+.kda-ie-email-checkparams .success {color: #339f15;}
+.kda-ie-email-checkparams .fail {color: #ff0000;}
+.bx-core-popup-menu {max-height: 700px; overflow: auto;}
+.kda-ie-linkauth-handler,
+.bx-core-adm-dialog td.kda-ie-linkauth-handler {text-align: center;}
+.kda-ie-linkauth-handler textarea {width: 600px; height: 80px;}
+.kda-ie-tbl table.list tr.kda-ie-tbl-headers td,
+.kda-ie-tbl table.list tr.kda-ie-tbl-headers td:hover .cell_inner {background-color: #c3d467 !important;}
+.kda-ie-newprops-tbl select[multiple],
+.adm-workarea .kda-ie-newprops-tbl select[multiple] {width: 300px; height: 300px;}
+.kda-ie-newprops-tbl .kda-ie-newprops-mchosen select[multiple],
+.adm-workarea .kda-ie-newprops-tbl .kda-ie-newprops-mchosen select[multiple] {width: 270px; height: 25px;}
+.kda-ie-newprops-floatchb {float: left; width: 30px; padding: 5px 0px 0px 0px;}
+.kda-ie-filter .adm-filter-add-tab {display: none;}
+.kda-ie-filter .adm-filter-bottom .adm-filter-setting {display: none;}
