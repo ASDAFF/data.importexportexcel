@@ -13,7 +13,7 @@ $moduleId = 'data.importexportexcel';
 $moduleFilePrefix = 'data_import_excel';
 $moduleJsId = 'data_importexcel';
 $moduleJsId2 = str_replace('.', '_', $moduleId);
-$moduleDemoExpiredFunc = $moduleJsId2.'_demo_expired';
+
 $moduleShowDemoFunc = $moduleJsId2.'_show_demo';
 CModule::IncludeModule('iblock');
 CModule::IncludeModule($moduleId);
@@ -21,12 +21,6 @@ CJSCore::Init(array($moduleJsId));
 IncludeModuleLangFile(__FILE__);
 
 include_once(dirname(__FILE__).'/../install/demo.php');
-if ($moduleDemoExpiredFunc()) {
-	require ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
-	$moduleShowDemoFunc();
-	require ($DOCUMENT_ROOT."/bitrix/modules/main/include/epilog_admin.php");
-	die();
-}
 
 $MODULE_RIGHT = $APPLICATION->GetGroupRight($moduleId);
 if($MODULE_RIGHT < "W") $APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
@@ -392,9 +386,6 @@ $lAdmin->CheckListMode();
 
 require($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/include/prolog_admin_after.php");
 
-if (!$moduleDemoExpiredFunc()) {
-	$moduleShowDemoFunc();
-}
 ?>
 <form name="find_form" method="GET" action="<?echo $APPLICATION->GetCurPage()?>?">
 <input type="hidden" name="lang" value="<?echo LANG?>">

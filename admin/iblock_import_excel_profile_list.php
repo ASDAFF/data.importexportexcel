@@ -12,7 +12,7 @@ $moduleId = 'data.importexportexcel';
 $moduleFilePrefix = 'data_import_excel';
 $moduleJsId = 'data_importexcel';
 $moduleJsId2 = str_replace('.', '_', $moduleId);
-$moduleDemoExpiredFunc = $moduleJsId2.'_demo_expired';
+
 $moduleShowDemoFunc = $moduleJsId2.'_show_demo';
 CModule::IncludeModule($moduleId);
 CJSCore::Init(array('fileinput', $moduleJsId));
@@ -20,12 +20,6 @@ require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/iblock/prolog.php");
 IncludeModuleLangFile(__FILE__);
 
 include_once(dirname(__FILE__).'/../install/demo.php');
-if ($moduleDemoExpiredFunc()) {
-	require ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
-	$moduleShowDemoFunc();
-	require ($DOCUMENT_ROOT."/bitrix/modules/main/include/epilog_admin.php");
-	die();
-}
 
 $MODULE_RIGHT = $APPLICATION->GetGroupRight($moduleId);
 if($MODULE_RIGHT < "W") $APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
@@ -267,10 +261,6 @@ $lAdmin->CheckListMode();
 
 $APPLICATION->SetTitle(GetMessage("KDA_IE_PROFILE_LIST_TITLE"));
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
-
-if (!$moduleDemoExpiredFunc()) {
-	$moduleShowDemoFunc();
-}
 
 $aMenu = array(
 	array(

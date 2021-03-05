@@ -15,50 +15,27 @@ if(!class_exists('CDataImpExpExcelRunner'))
 		{
 			return self::$moduleId;
 		}
-		
-		private static function DemoExpired()
-		{
-			$DemoMode = CModule::IncludeModuleEx(self::$moduleId);
-			$cnstPrefix = str_replace('.', '_', self::$moduleId);
-			if ($DemoMode==MODULE_DEMO) {
-				$now=time();
-				if (defined($cnstPrefix."_OLDSITEEXPIREDATE")) {
-					if ($now>=constant($cnstPrefix.'_OLDSITEEXPIREDATE') || constant($cnstPrefix.'_OLDSITEEXPIREDATE')>$now+2000000 || $now - filectime(__FILE__)>2000000) {
-						return true;
-					}
-				} else{ 
-					return true;
-				}
-			} elseif ($DemoMode==MODULE_DEMO_EXPIRED) {
-				return true;
-			}
-			return false;
-		}
-		
+
 		static function ImportIblock($filename, $params, $fparams, $stepparams, $pid = false)
 		{
-			if(self::DemoExpired()) return array();
 			$ie = new CKDAImportExcel($filename, $params, $fparams, $stepparams, $pid);
 			return $ie->Import();
 		}
 		
 		static function ImportHighloadblock($filename, $params, $fparams, $stepparams, $pid = false)
 		{
-			if(self::DemoExpired()) return array();
 			$ie = new CKDAImportExcelHighload($filename, $params, $fparams, $stepparams, $pid);
 			return $ie->Import();
 		}
 		
 		static function ExportIblock($params=array(), $fparams=array(), $stepparams=false, $pid = false)
 		{
-			if(self::DemoExpired()) return array();
 			$ee = new CKDAExportExcel($params, $fparams, $stepparams, $pid);
 			return $ee->Export();
 		}
 		
 		static function ExportHighloadblock($params=array(), $fparams=array(), $stepparams=false, $pid = false)
 		{
-			if(self::DemoExpired()) return array();
 			$ee = new CKDAExportExcelHighload($params, $fparams, $stepparams, $pid);
 			return $ee->Export();
 		}
