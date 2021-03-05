@@ -3,7 +3,7 @@
   "version": "2.1.2",
   "main": "",
   "ignore": [
-    "source",
+    "source__",
     ".gitignore",
     ".idea",
     "bower.json",
