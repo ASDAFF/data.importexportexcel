@@ -22,7 +22,6 @@ $MESS["KDA_IE_HELP_VIDEO_EMAIL_FTP_CRON"] = "Импорт с Email-адреса 
 $MESS["KDA_IE_HELP_VIDEO_MASS_PROP_CREATE"] = "Массовое создание свойств";
 $MESS["KDA_IE_HELP_VIDEO_CLOUD_SERVISES"] = "Загрузка файлов с облачных сервисов";
 $MESS["KDA_IE_HELP_VIDEO_PRICES_EXT"] = "Загрузка цен в расширенном режиме управления";
-$MESS["KDA_IE_FAQ_PROLOG"] = "Внимание! Если Вы не нашли ответ на свой вопрос, то задайте его нам по почте. <br>Адрес техподержки: <a href=\"mailto:%s\">%s</a>.";
 $MESS["KDA_IE_FAQ_QUEST_PICTURES"] = "Как импортировать картинки?";
 $MESS["KDA_IE_FAQ_ANS_PICTURES"] = "Вы можете посмотреть видео-инструкцию по импорту картинок <a href=\"https://www.youtube.com/watch?v=vkQQTlrJKN4\" target=\"_blank\">https://www.youtube.com/watch?v=vkQQTlrJKN4</a><br><br>
 	Импорт картинок возможен 2-мя способами:

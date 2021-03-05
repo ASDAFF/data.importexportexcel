@@ -7,7 +7,6 @@ if(!defined('NO_AGENT_CHECK')) define('NO_AGENT_CHECK', true);
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_before.php");
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/iblock/prolog.php");
 $moduleId = 'data.importexportexcel';
-$moduleEmail = 'app@datautions.su';
 $imgPath = '/bitrix/panel/'.$moduleId.'/import/images/video_icons/';
 CModule::IncludeModule($moduleId);
 IncludeModuleLangFile(__FILE__);
@@ -91,8 +90,6 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_popup_adm
 			<div>&nbsp;</div>
 		</div>
 		<div>
-			<div>&nbsp;</div>
-			<p class="kda-ie-help-faq-prolog"><i><?echo sprintf(GetMessage("KDA_IE_FAQ_PROLOG"), $moduleEmail, $moduleEmail);?></i></p>
 			<ol id="kda-ie-help-faq">
 				<li>
 					<a href="#"><?echo GetMessage("KDA_IE_FAQ_QUEST_PICTURES");?></a>
