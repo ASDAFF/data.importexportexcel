@@ -1,0 +1,19 @@
+{
+    "name": "asdaff/data.importexportexcel",
+    "description": "Экспорт/Импорт элементов и разделов инфоблока в Excel-файлы",
+    "type": "bitrix-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ASDAFF",
+            "email": "asdaff.asad@yandex.ru"
+        }
+    ],
+    "extra": {
+        "installer-name": "data.importexportexcel"
+    },
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1"
+    }
+}
